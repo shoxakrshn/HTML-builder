@@ -19,11 +19,11 @@ const handleInput = (answer) => {
     clossApp();
   } else {
     writeStream.write(answer + '\n');
-    rl.question('', handleInput)
+    rl.question('', handleInput);
   }
 };
 
-console.log(`Hello, type something to create ${fileName}`)
+console.log(`Hello, type something to create ${fileName}`);
 
 rl.question('', handleInput);
 
