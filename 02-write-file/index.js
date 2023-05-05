@@ -27,7 +27,6 @@ console.log(`Hello, type something to create ${fileName}`);
 
 rl.question('', handleInput);
 
-
 rl.on('close', () => {
   console.log(`\nThe ${fileName} has been saved. Bye!`);
 });
