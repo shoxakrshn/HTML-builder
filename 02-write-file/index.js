@@ -12,7 +12,7 @@ const clossApp = () => {
   writeStream.end();
   rl.close();
   process.exit();
-}
+};
 
 const handleInput = (answer) => {
   if (answer === 'exit') {
@@ -33,5 +33,5 @@ rl.on('close', () => {
 
 process.on('SIGINT', clossApp);
 
-rl.on('error', () => console.error(error));
-writeStream.on('error', () => console.error(error));
+rl.on('error', (error) => console.error(error));
+writeStream.on('error', (error) => console.error(error));
