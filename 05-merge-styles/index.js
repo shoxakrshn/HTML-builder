@@ -30,5 +30,4 @@ fs.readdir(stylesPath, { withFileTypes: true }, (err, data) => {
       });
     });
   });
-  //console.log(cssFilesPath);
 });
