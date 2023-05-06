@@ -61,6 +61,7 @@ const copyDir = (srcDir, dstDir) => {
 
 copyDir(srcFolderPath, dstFolderPath);
 
+module.exports = copyDir;
 /*
 fs.mkdir(dstFolderPath, { recursive: true }, (err) =>  {
   if (err) {
