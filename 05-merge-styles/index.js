@@ -11,7 +11,7 @@ const mergeStyles = (srcStyles, bundle) => {
     }
     const write = fs.createWriteStream(bundle);
     const cssFiles = data.filter((file) => path.extname(file.name) === '.css' && !file.isDirectory());
-    const cssFilesPath = cssFiles.map((cssFile) => path.join(stylesPath, cssFile.name));
+    const cssFilesPath = cssFiles.map((cssFile) => path.join(srcStyles, cssFile.name));
     cssFilesPath.forEach((cssFilePath) => {
       const read = fs.createReadStream(cssFilePath, 'utf-8');
       read.pipe(write);
