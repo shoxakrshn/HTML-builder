@@ -21,7 +21,7 @@ const mergeStyles = (srcStyles, bundle) => {
 
 mergeStyles(stylesPath, cssBundle);
 
-module.exports = mergeStyles;
+module.exports =  mergeStyles;
 /*
 fs.writeFile(cssBundle, '', (err) => {
   if (err) {
